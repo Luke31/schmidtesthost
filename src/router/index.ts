@@ -9,22 +9,26 @@ export let routes: RouteRecordRaw[] = [
       title: "OnePage",
     },
   },
-  // {
-  //   path: "/",
-  //   redirect: { name: "OnePage" },
-  // },
-  // {
-  //   path: "/:pathMatch(.*)*",
-  //   component: {},
-  //   beforeEnter: async () => {
-  //     window.location.assign("/");
-  //     return false;
-  //   },
-  // },
+  {
+    path: "/v3/onepage",
+    redirect: { name: "OnePage" },
+  },
+  {
+    path: "/",
+    redirect: { name: "OnePage" },
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    component: {},
+    beforeEnter: async () => {
+      window.location.assign("/");
+      return false;
+    },
+  },
 ];
 
 export const router = createRouter({
-  history: createWebHistory("/v3"),
+  history: createWebHistory(),
   routes,
 });
 
