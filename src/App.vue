@@ -1,13 +1,13 @@
+<template>
+  <div id="app">
+    <RouterView data-cy="default-layout__main-content" />
+  </div>
+  <HelloWorld msg="Layout" />
+</template>
+
 <script setup lang="ts">
 import HelloWorld from '@host/components/HelloWorld.vue'
 </script>
-
-<template>
-  <div>
-    StartPage
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
 
 <style scoped>
 .logo {

@@ -8,4 +8,11 @@ export default defineConfig({
   base: '/v3/',
   resolve: { alias: { "@host": pathSrc } },
   plugins: [vue()],
+  server: {
+    port: 8070,
+  },
+  build: {
+    target: ["chrome89", "edge89", "firefox89", "safari15"],
+    sourcemap: true,
+  },
 })
