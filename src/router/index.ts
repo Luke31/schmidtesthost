@@ -14,7 +14,7 @@ export let routes: RouteRecordRaw[] = [
     redirect: { name: "OnePage" },
   },
   {
-    path: "/",
+    path: "/v3",
     redirect: { name: "OnePage" },
   },
   {

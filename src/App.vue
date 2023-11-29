@@ -2,11 +2,10 @@
   <div id="app">
     <RouterView data-cy="default-layout__main-content" />
   </div>
-  <HelloWorld msg="Layout" />
+  Layout
 </template>
 
 <script setup lang="ts">
-import HelloWorld from '@host/components/HelloWorld.vue'
 </script>
 
 <style scoped>
